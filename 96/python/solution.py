@@ -1,5 +1,8 @@
+import functools
+
 
 class Solution:
+    @functools.lru_cache(maxsize=100)
     def numTrees(self, n: int) -> int:
         if n <= 1:
             return 1
