@@ -17,3 +17,11 @@ Output: [-1]
 
 
 # Solution
+
+
+The last element of post order traversal will be the root.
+We just need to work on 
+
+### Recursive:
+
+

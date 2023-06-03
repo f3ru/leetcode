@@ -7,12 +7,12 @@ class TreeNode:
         
 
 class Solution:
-    def isValidBST(self, root: TreeNode) -> bool:
+    def recoverTree(self, root: TreeNode) -> bool:
         minRange = TreeNode("-inf")
         maxRange = TreeNode("inf")
-        return self._helper_isValidBST_(root, minRange=float("-inf"), maxRange=float("inf"))
+        self._helper_recoverTree_(root, minRange=minRange, maxRange=maxRange)
         
-    def _helper_isValidBST_(self, root: TreeNode, minRange: TreeNode, maxRange: TreeNode) -> None:
+    def _helper_recoverTree_(self, root: TreeNode, minRange: TreeNode, maxRange: TreeNode) -> None:
         if root == None:
             return 
         
